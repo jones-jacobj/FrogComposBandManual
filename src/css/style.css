@@ -2,13 +2,17 @@
 /*    border: 1px red solid;*/
 /*}*/
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 html{
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     background-color: black;
+    font-size: 22px;
 }
 
 body {
-    font-size: 22px;
     padding-top: 50px;
     padding-left: 100px;
 }
