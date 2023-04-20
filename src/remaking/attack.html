@@ -41,88 +41,90 @@
 </p>
 
 <a id="MeleeWeapons"></a>
-    <h3 style="color:#c00000">Melee Weapons</h3>
-    <p>
-        Carrying a weapon in your backpack does you no good; you must wield a weapon with the <span style="color:#ff8000">[ w ] </span> command before it can be used in a fight. Most characters begin the game with a starting weapon already equipped.
-    </p>
-    <p>
-        Melee weapons have three main combat characteristics: their <span style="color:#ff0000">damage dice</span>, their<span style="color:#ff0000">accuracy bonus </span> (to-hit) and their <span style="color:#ff0000">damage bonus </span> (to-dam). A long sword might be displayed as <span style="color:#00ffff">a Long Sword (2d6) (+3,+4)</span>; here <span style="color:#00ffff">2d6 </span> are the damage dice (throw two six-sided dice, giving between 2 and 12 damage per hit), <span color="#00ffff">+3</span> is the accuracy bonus (improving your chance to successfully hit monsters) and <span style="color:#000000"> +4 </span> is the damage bonus (which will be added to the 2d6 roll). For newly discovered objects, these numbers will only become visible once you have identified the weapon. (See <span style="color:#00ff00"><a href="objects.html#WeirdNumbers">[ b ]</a></span> for an explanation of what other numbers might appear on your weapon.)
-    </p>
+<h3 style="color:#c00000">Melee Weapons</h3>
+<p>
+    Carrying a weapon in your backpack does you no good; you must wield a weapon with the <span style="color:#ff8000">[ w ] </span> command before it can be used in a fight. Most characters begin the game with a starting weapon already equipped.
+</p>
+<p>
+    Melee weapons have three main combat characteristics: their <span style="color:#ff0000">damage dice</span>, their<span style="color:#ff0000">accuracy bonus </span> (to-hit) and their <span style="color:#ff0000">damage bonus </span> (to-dam). A long sword might be displayed as <span style="color:#00ffff">a Long Sword (2d6) (+3,+4)</span>; here <span style="color:#00ffff">2d6 </span> are the damage dice (throw two six-sided dice, giving between 2 and 12 damage per hit), <span color="#00ffff">+3</span> is the accuracy bonus (improving your chance to successfully hit monsters) and <span style="color:#000000"> +4 </span> is the damage bonus (which will be added to the 2d6 roll). For newly discovered objects, these numbers will only become visible once you have identified the weapon. (See <span style="color:#00ff00"><a href="objects.html#WeirdNumbers">[ b ]</a></span> for an explanation of what other numbers might appear on your weapon.)
+</p>
+<p>
+    The weapon with the highest dice and damage bonus will not necessarily be the weapon you do the most damage with; heavy weapons often have higher dice, but your strength and dexterity might allow more blows per round with a lighter weapon. To review your average damage (and accuracy) with your current weapon, type either <span style="color:#ff8000"> [ C m ] </span> (  <span style="color:#ff8000">[ C ]</span>haracter Sheet, <span style="color:#ff8000">[ m ]</span>elee section) or <span style="color:#ff8000">[ ~ W ]</span> (Knowledge Menu, Weapon section); the two display the same information, so just use the one you find more comfortable.
+</p>
+
+<a id="MissileLaunch"></a>
+<h3 style="color:#c00000">Ranged Weapons</h3>
+<p>
+    Slings, bows and crossbows differ from melee weapons in that they have <span style="color:#ff0000">damage multipliers </span> instead of damage dice. A short bow, for instance, might be displayed as <span style="color:#00ffff">a Short Bow (x2.50) (+4,+7) </span> where the <span style="color:#00ffff">x2.50 </span> is the multiplier, and the (<span style="color:#00ffff">+4,+7</span> ) are bonuses to accuracy and damage.
+</p>
+<p>
+    The full damage calculation for a shot starts with the damage dice of the projectile (which might be <span style="color:#00ffff">an Arrow (3d4) (+2,+5)</span>), then applies the damage bonus from the projectile, then slays and brands (see <a href="attack.html#Slays"><span style="color:#00ff00">[ c ] </span></a> below), then boosts from lucky critical hits, then the multiplier, and finally damage bonuses from the launcher and possibly other sources. Because slays, critical hits and the multiplier are all applied fairly late in the process, after the damage bonus from the projectile, the total damage from a single hit can be high.
+</p>
+<p>
+    The various ranged weapons each have their own strengths and weaknesses; some have higher multipliers, but give fewer shots per turn. Note that the shots per turn in the table below are <span style="color:#ff0000">relative</span> and should not be taken literally, as your shooting speed depends on not just the weapon but also your Archery skill.
+</p>
 
 
-The weapon with the highest dice and damage bonus will not necessarily
-be the weapon you do the most damage with; heavy weapons often have
-higher dice, but your strength and dexterity might allow more blows per
-round with a lighter weapon. To review your average damage (and
-accuracy) with your current weapon, type either   <font color="#ff8000">Cm </font> (  <font color="#ff8000">C</font> haracter Sheet,
-  <font color="#ff8000">m</font> elee section) or </font><font color="#ff8000">~W </font> (Knowledge Menu, Weapon section); the two display
-the same information, so just use the one you find more comfortable.
+    <table style="text-align: left">
+    <tr>
+        <th><span style="color:#C08040">Name</span></th>
+        <th><span style="color:#C08040">Shots per turn</span></th>
+        <th><span style="color:#C08040">Multiplier</span></th>
+        <th><span style="color:#C08040">Ammunition</span></th>
+    </tr>
+    <tr>
+        <td style="width: 200px">Sling</td>
+        <td style="width: 200px">1.40</td>
+        <td style="width: 200px">2.00</td>
+        <td style="width: 200px">Pebbles, Iron Shots</td>
+    </tr>
+    <tr>
+        <td>Short Bow</td>
+        <td>1.12</td>
+        <td>2.50</td>
+        <td>Arrows</td>
+    </tr>
+    <tr>
+        <td>Long Bow</td>
+        <td>1.00</td>
+        <td>3.00</td>
+        <td>Arrows</td>
+    </tr>
+    <tr>
+        <td>Light Crossbow</td>
+        <td>0.83</td>
+        <td>3.50</td>
+        <td>Bolts</td>
+    </tr>
+    <tr>
+        <td>Heavy Crossbow</td>
+        <td>0.75</td>
+        <td>4.00</td>
+        <td>Bolts</td>
+    </tr>
+    </table>
 
-<a name="MissileLaunch"></a></font><font color="#c00000">Ranged Weapons
+<p>
+    The maximum range of a shot depends on the multiplier, and thus tends to be higher for bows and crossbows than for slings. To review your average damage (and accuracy, range, shooting speed etc.) with your current shooter and ammo, type either <span style="color:#ff8000">[ C s ] </span> (<span style="color:#ff8000">[ C ]</span>haracter Sheet, <span style="color:#ff8000">[ s ]</span>hooting section) or <span style="color:#ff8000">[ ~ S ]</span> (Knowledge Menu, Shooter section); the two display the same information.
+</p>
 
-</font> Slings, bows and crossbows differ from melee weapons in that they have
-</font><font color="#ff0000">damage multipliers </font> instead of damage dice. A short bow, for instance,
-might be displayed as </font><font color="#00ffff">a Short Bow (x2.50) (+4,+7) </font> where the </font><font color="#00ffff">x2.50 </font> is
-the multiplier, and the (</font><font color="#00ffff">+4,+7</font> ) are bonuses to accuracy and damage.
+<a id="EgoArtifact"></a>
+<h3 style="color:#c00000">Ego Weapons and Artifacts</h3>
+<p>
+    The best weapons in the game are imbued with mighty magical powers, and fall into two broad categories: (1) <span style="color:#ff0000">artifacts </span> and (2) <span style="color:#ff0000">ego items</span>. These categories are explained in more detail elsewhere (<a href="objects.html#EgoItems"><span style="color:#00ff00">[ d ]</span></a> and <a href="objects.html#SpecialItems"><span style="color:#00ff00">[ e ]</span></a> ); the main difference between them is that an artifact can only be found once in each game, while an ego item shares its type with unlimitedly many other items.
+</p>
+<p>
+    Both artifacts and ego items can be highly valuable, and may provide exceptional damage against certain monsters, boosts to your stats or speed, elemental resistances, and other nice stuff. Typically, once you've got past the very early game, the weapon you wield will always be either an artifact or an ego item.
+</p>
+<p>
+    A list of all artifacts and ego types, and all the bonuses they give, would be both a spoiler and excessively long; so play the game and find out what there is :)
+</p>
 
-The full damage calculation for a shot starts with the damage dice of
-the projectile (which might be </font><font color="#00ffff">an Arrow (3d4) (+2,+5)</font> ), then applies
-the damage bonus from the projectile, then slays and brands (see <a href="attack.html#Slays"></font><font color="#00ff00">[c]</a>
-</font> below), then boosts from lucky critical hits, then the multiplier, and
-finally damage bonuses from the launcher and possibly other sources.
-Because slays, critical hits and the multiplier are all applied fairly
-late in the process, after the damage bonus from the projectile, the
-total damage from a single hit can be high.
-
-The various ranged weapons each have their own strengths and
-weaknesses; some have higher multipliers, but give fewer shots per
-turn. Note that the shots per turn in the table below are </font><font color="#ff0000">relative </font> and
-should not be taken literally, as your shooting speed depends on not
-just the weapon but also your Archery skill.
-
-                 </font><font color="#c08040">Shots per turn    Multiplier    Ammunition
-</font> Sling                 1.40             2         Pebbles, Iron Shots
-Short Bow             1.12             2.50      Arrows
-Long Bow              1.00             3         Arrows
-Light Crossbow        0.83             3.50      Bolts
-Heavy Crossbow        0.75             4         Bolts
-
-The maximum range of a shot depends on the multiplier, and thus tends
-to be higher for bows and crossbows than for slings.
-
-To review your average damage (and accuracy, range, shooting speed
-etc.) with your current shooter and ammo, type either </font><font color="#ff8000">Cs </font> (</font><font color="#ff8000">C</font> haracter
-Sheet, </font><font color="#ff8000">s</font> hooting section) or </font><font color="#ff8000">~S </font> (Knowledge Menu, Shooter section); the
-two display the same information.
-
-<a name="EgoArtifact"></a></font><font color="#c00000">Ego Weapons and Artifacts
-
-</font> The best weapons in the game are imbued with mighty magical powers, and
-fall into two broad categories: (1) </font><font color="#ff0000">artifacts </font> and (2) </font><font color="#ff0000">ego items</font> . These
-categories are explained in more detail elsewhere (<a href="objects.html#EgoItems"></font><font color="#00ff00">[d]</a> </font> and <a href="objects.html#SpecialItems"></font><font color="#00ff00">[e]</a></font> ); the
-main difference between them is that an artifact can only be found once
-in each game, while an ego item shares its type with unlimitedly many
-other items.
-
-Both artifacts and ego items can be highly valuable, and may provide
-exceptional damage against certain monsters, boosts to your stats or
-speed, elemental resistances, and other nice stuff. Typically, once
-you've got past the very early game, the weapon you wield will always
-be either an artifact or an ego item.
-
-A list of all artifacts and ego types, and all the bonuses they give,
-would be both a spoiler and excessively long; so play the game and find
-out what there is :)
-
-<a name="Slays"></a></font><font color="#c00000">Slays and Brands
-
-</font> Slays and brands are weapon attributes that give you extra damage
-against certain monsters. A </font><font color="#ff0000">slay </font> increases your damage against a
-particular class of monsters (such as orcs, demons, or undead), while a
-</font><font color="#ff0000">brand </font> is elemental and gives extra damage against all monsters not
-resistant to that element. Slays and brands are functionally one and
-the same thing, the only difference between them is terminology.
-
+<a id="Slays"></a>
+<h3 style="color:#c00000">Slays and Brands</h3>
+<p>
+    Slays and brands are weapon attributes that give you extra damage against certain monsters. A <span style="color:#ff0000">slay </span> increases your damage against a particular class of monsters (such as orcs, demons, or undead), while a <span style="color:#ff0000">brand </span> is elemental and gives extra damage against all monsters not resistant to that element. Slays and brands are functionally one and the same thing, the only difference between them is terminology.
+</p>
 Melee weapons frequently have a slay or a brand, and may receive
 additional </font><font color="#ff0000">off-weapon slays </font> (or brands) from sources such as Gloves of
 Slaying. Melee slays work by multiplying the damage dice roll of the
