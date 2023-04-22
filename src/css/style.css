@@ -36,5 +36,29 @@ ul{
 }
 
 p {
-    line-height: 160%;
+    line-height: 145%;
+}
+
+.red{
+    color:#ff0000;
+}
+
+.green{
+    color:#00ff00;
+}
+
+.brown{
+    color:#C08040;
+}
+
+.orange{
+    color:#ff8000;
+}
+
+.blue{
+    color:#00ffff;
+}
+
+.purple{
+    color:#ff00ff;
 }

@@ -5,23 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Attacks</title>
 </head>
 <body>
 <h1 style="text-align: center; font-weight: bold; text-decoration: underline">Attacking and Weapons</h1>
 <p>
-    Attacking monsters in <span style="color:#ff0000">melee</span> is simple: if you move into a creature, you attack it, provided you have something to attack with. Usually "something to attack with" means a wielded <span style="color:#ff0000">melee weapon</span>, but this is not an absolute requirement: a few classes can use <span style="color:#ff0000">martial arts </span>to attack with their bare hands; Shield-speciality Weaponmasters can bash with their <span style="color:#ff0000">shields</span>; and Werewolves, Beornings and many Monster-mode races often rely on <span style="color:#ff0000">innate attacks </span>like claws or teeth.
+    Attacking monsters in <span class="red">melee</span> is simple: if you move into a creature, you attack it, provided you have something to attack with. Usually "something to attack with" means a wielded <span class="red">melee weapon</span>, but this is not an absolute requirement: a few classes can use <span class="red">martial arts </span>to attack with their bare hands; Shield-speciality Weaponmasters can bash with their <span class="red">shields</span>; and Werewolves, Beornings and many Monster-mode races often rely on <span class="red">innate attacks </span>like claws or teeth.
 </p>
 <p>
-    <span style="color:#ff0000"> Ranged combat </span>(shooting) requires you to equip a sling, bow, or crossbow, and to have appropriate projectiles you can fire with the <span style="color:#ff0000">[ f ]</span> command (<span style="color:#ff8000">[ t ]</span> in the roguelike keyset). Ideally, you would like to have a <span style="color:#ff0000">quiver</span> you can wield and keep your projectiles in, but this is not a requirement; it is merely a convenience that saves valuable inventory slots. The <span style="color:#ff8000">[ v ] </span>command can be used to throw items at monsters, but this is rarely very effective, except in special cases like Ninjas (or Ninja-Lawyers) throwing Iron Spikes.
+    <span class="red">Ranged combat </span>(shooting) requires you to equip a sling, bow, or crossbow, and to have appropriate projectiles you can fire with the <span class="red">[f]</span> command (<span class="orange">[t]</span> in the roguelike keyset). Ideally, you would like to have a <span class="red">quiver</span> you can wield and keep your projectiles in, but this is not a requirement; it is merely a convenience that saves valuable inventory slots. The <span class="orange">[v]</span> command can be used to throw items at monsters, but this is rarely very effective, except in special cases like Ninjas (or Ninja-Lawyers) throwing Iron Spikes.
 </p>
 <p>
-    Finally, you can use <span style="color:#ff0000">magic </span>to hurt monsters: all characters except Berserkers can attack with <span style="color:#ff0000">magical devices</span>, and spellcasters may also have access to <span style="color:#ff0000">offensive spells</span>.
+    Finally, you can use <span class="red">`magic</span> to hurt monsters: all characters except Berserkers can attack with <span class="red">magical devices</span>, and spellcasters may also have access to <span class="red">offensive spells</span>.
 </p>
 <p>
     Many characters are versatile enough to use most or all of these
-    attacking methods to good effect. In such cases <span style="color:#00ff00">melee is usually the form of attack that deals the most damage per turn</span>; but as it only works against adjacent monsters, you will likely suffer plenty of hits in return, so <span style="color:#00ff00">melee also causes you to suffer the most damage per turn</span>.
+    attacking methods to good effect. In such cases <span class="green">melee is usually the form of attack that deals the most damage per turn</span>; but as it only works against adjacent monsters, you will likely suffer plenty of hits in return, so <span class="green">melee also causes you to suffer the most damage per turn</span>.
     Whether this is a good trade-off is for you to determine!
 </p>
 <p>
@@ -29,89 +30,80 @@
 </p>
 
 <a id="DistanceAttack"></a>
-<h3 style="color:#c00000">Attacking from a Distance</h3>
+<h3 class="red">Attacking from a Distance</h3>
 <p>
-    Non-melee attacks always need to be aimed. Whether you are attacking with a shooter, a magic device, a spell, or by throwing items, you must select a target for your attack. This can be done by either firing into one of the eight compass directions, or by using <span style="color:#ff8000">[ * ]</span> to select a more specific target.
+    Non-melee attacks always need to be aimed. Whether you are attacking with a shooter, a magic device, a spell, or by throwing items, you must select a target for your attack. This can be done by either firing into one of the eight compass directions, or by using <span class="orange">[*]</span> to select a more specific target.
 </p>
 <p>
-    For example, if you want to fire (<span style="color:#ff8000">[ f ]</span>/<span style="color:#ff8000">[ t ]</span>) the second ammo <span style="color:#ff8000">[ b ]</span> from your quiver, you could type <span style="color:#ff8000"> [ fb9 ] </span>to fire northeast; or <span style="color:#ff8000">[ fb* ]</span>to target a specific monster or square followed by <span style="color:#ff8000">[ 5 ]</span>when you are happy with your selected target. See <span style="color:#00ff00"><a href="commdesc.html#Targetting">[ a ]</a></span>for more details on the <span style="color:#ff8000">[ * ]</span> targeting command.
+    For example, if you want to fire (<span class="orange">[f]</span> / <span class="orange">[t]</span>) the second ammo <span class="orange">[b]</span> from your quiver, you could type <span class="orange">[fb9]</span> to fire northeast; or <span class="orage">[fb*]</span> to target a specific monster or square followed by <span class="orange">[5]</span> when you are happy with your selected target. See <span class="green"><a href="commdesc.html#Targetting">[a]</a></span> for more details on the <span class="orange"> * </span> targeting command.
 </p>
 <p>
-    Often, after one attack of this type, you can speed things up by using the <span style="color:#ff8000">[ n ] </span> command (<span style="color:#ff8000">[ x ] </span>in the roguelike keyset) to attack the same monster in the same way again. Note, though, that this may sometimes produce unexpected results; for example, if you ran out of your original ammo, a new ammo would move into the <span style="color:#ff8000">[ b ]</span> quiver slot and you would start using it instead. Also, <span style="color:#ff8000"> [ n ] </span>only tracks a moving target if you targeted a monster; if your target was a compass direction or a square, <span style="color:#ff8000">n </span>will keep firing in that direction even if monsters move away from there.
+    Often, after one attack of this type, you can speed things up by using the <span class="orange">[n]</span> command (<span class="orange">[x]</span>in the roguelike keyset) to attack the same monster in the same way again. Note, though, that this may sometimes produce unexpected results; for example, if you ran out of your original ammo, a new ammo would move into the <span class="orange">[b]</span> quiver slot and you would start using it instead. Also, <span class="orange">[n]</span>only tracks a moving target if you targeted a monster; if your target was a compass direction or a square, <span class="orange">[n]</span> will keep firing in that direction even if monsters move away from there.
 </p>
 
 <a id="MeleeWeapons"></a>
-<h3 style="color:#c00000">Melee Weapons</h3>
+<h3 class="red">Melee Weapons</h3>
 <p>
-    Carrying a weapon in your backpack does you no good; you must wield a weapon with the <span style="color:#ff8000">[ w ] </span> command before it can be used in a fight. Most characters begin the game with a starting weapon already equipped.
+    Carrying a weapon in your backpack does you no good; you must wield a weapon with the <span class="orange">[w]</span> command before it can be used in a fight. Most characters begin the game with a starting weapon already  equipped.
 </p>
 <p>
-    Melee weapons have three main combat characteristics: their <span style="color:#ff0000">damage dice</span>, their<span style="color:#ff0000">accuracy bonus </span> (to-hit) and their <span style="color:#ff0000">damage bonus </span> (to-dam). A long sword might be displayed as <span style="color:#00ffff">a Long Sword (2d6) (+3,+4)</span>; here <span style="color:#00ffff">2d6 </span> are the damage dice (throw two six-sided dice, giving between 2 and 12 damage per hit), <span color="#00ffff">+3</span> is the accuracy bonus (improving your chance to successfully hit monsters) and <span style="color:#000000"> +4 </span> is the damage bonus (which will be added to the 2d6 roll). For newly discovered objects, these numbers will only become visible once you have identified the weapon. (See <span style="color:#00ff00"><a href="objects.html#WeirdNumbers">[ b ]</a></span> for an explanation of what other numbers might appear on your weapon.)
+    Melee weapons have three main combat characteristics: their <span class="red">damage dice</span>, their <span class="red">accuracy bonus</span> (to-hit) and their <span class="red">damage bonus</span> (to-dam). A long sword might be displayed as <span class="blue">a Long Sword (2d6) (+3,+4)</span>; here <span class="blue">2d6</span> are the damage dice (throw two six-sided dice, giving between 2 and 12 damage per hit), <span class="blue">+3</span> is the accuracy bonus (improving your chance to successfully hit monsters) and <span class="blue">+4</span> is the damage bonus (which will be added to the 2d6 roll). For newly discovered objects, these numbers will only become visible once you have identified the weapon. (See <span class="green"><a href="objects.html#WeirdNumbers">[ b ]</a></span> for an explanation of what other numbers might appear on your weapon.)
 </p>
 <p>
-    The weapon with the highest dice and damage bonus will not necessarily be the weapon you do the most damage with; heavy weapons often have higher dice, but your strength and dexterity might allow more blows per round with a lighter weapon. To review your average damage (and accuracy) with your current weapon, type either <span style="color:#ff8000"> [ C m ] </span> (  <span style="color:#ff8000">[ C ]</span>haracter Sheet, <span style="color:#ff8000">[ m ]</span>elee section) or <span style="color:#ff8000">[ ~ W ]</span> (Knowledge Menu, Weapon section); the two display the same information, so just use the one you find more comfortable.
+    The weapon with the highest dice and damage bonus will not necessarily be the weapon you do the most damage with; heavy weapons often have higher dice, but your strength and dexterity might allow more blows per round with a lighter weapon. To review your average damage (and accuracy) with your current weapon, type either <span class="orange">[ C m ]</span> ( <span class="orange">[ C ]</span>haracter Sheet, <span class="orange">[ m ]</span>elee section) or <span class="orange">[ ~ W ]</span> (Knowledge Menu, Weapon section); the two display the same information, so just use the one you find more comfortable.
 </p>
 
 <a id="MissileLaunch"></a>
-<h3 style="color:#c00000">Ranged Weapons</h3>
+<h3 class="red">Ranged Weapons</h3>
 <p>
-    Slings, bows and crossbows differ from melee weapons in that they have <span style="color:#ff0000">damage multipliers </span> instead of damage dice. A short bow, for instance, might be displayed as <span style="color:#00ffff">a Short Bow (x2.50) (+4,+7) </span> where the <span style="color:#00ffff">x2.50 </span> is the multiplier, and the (<span style="color:#00ffff">+4,+7</span> ) are bonuses to accuracy and damage.
+    Slings, bows and crossbows differ from melee weapons in that they have <span class="red">damage multipliers</span> instead of damage dice. A short bow, for instance, might be displayed as <span class="blue">a Short Bow (x2.50) (+4,+7) </span> where the <span class="blue">x2.50 </span> is the multiplier, and the (<span class="blue">+4,+7</span> ) are bonuses to accuracy and damage.
 </p>
 <p>
-    The full damage calculation for a shot starts with the damage dice of the projectile (which might be <span style="color:#00ffff">an Arrow (3d4) (+2,+5)</span>), then applies the damage bonus from the projectile, then slays and brands (see <a href="attack.html#Slays"><span style="color:#00ff00">[ c ] </span></a> below), then boosts from lucky critical hits, then the multiplier, and finally damage bonuses from the launcher and possibly other sources. Because slays, critical hits and the multiplier are all applied fairly late in the process, after the damage bonus from the projectile, the total damage from a single hit can be high.
+    The full damage calculation for a shot starts with the damage dice of the projectile (which might be <span class="blue">an Arrow (3d4) (+2,+5)</span>), then applies the damage bonus from the projectile, then slays and brands (see <a href="attack.html#Slays"><span class="green">[ c ]</span></a> below), then boosts from lucky critical hits, then the multiplier, and finally damage bonuses from the launcher and possibly other sources. Because slays, critical hits and the multiplier are all applied fairly late in the process, after the damage bonus from the projectile, the total damage from a single hit can be high.
 </p>
 <p>
-    The various ranged weapons each have their own strengths and weaknesses; some have higher multipliers, but give fewer shots per turn. Note that the shots per turn in the table below are <span style="color:#ff0000">relative</span> and should not be taken literally, as your shooting speed depends on not just the weapon but also your Archery skill.
+    The various ranged weapons each have their own strengths and weaknesses; some have higher multipliers, but give fewer shots per turn. Note that the shots per turn in the table below are <span class="red">relative</span> and should not be taken literally, as your shooting speed depends on not just the weapon but also your Archery skill.
 </p>
-
-
-    <table style="text-align: left">
-    <tr>
-        <th><span style="color:#C08040">Name</span></th>
-        <th><span style="color:#C08040">Shots per turn</span></th>
-        <th><span style="color:#C08040">Multiplier</span></th>
-        <th><span style="color:#C08040">Ammunition</span></th>
-    </tr>
-    <tr>
-        <td style="width: 200px">Sling</td>
-        <td style="width: 200px">1.40</td>
-        <td style="width: 200px">2.00</td>
-        <td style="width: 200px">Pebbles, Iron Shots</td>
-    </tr>
-    <tr>
-        <td>Short Bow</td>
-        <td>1.12</td>
-        <td>2.50</td>
-        <td>Arrows</td>
-    </tr>
-    <tr>
-        <td>Long Bow</td>
-        <td>1.00</td>
-        <td>3.00</td>
-        <td>Arrows</td>
-    </tr>
-    <tr>
-        <td>Light Crossbow</td>
-        <td>0.83</td>
-        <td>3.50</td>
-        <td>Bolts</td>
-    </tr>
-    <tr>
-        <td>Heavy Crossbow</td>
-        <td>0.75</td>
-        <td>4.00</td>
-        <td>Bolts</td>
-    </tr>
-    </table>
-
+<div class="container" style="padding: 25px 20px;">
+    <div class="row d-flex flex-row">
+        <div class="col"><span class="brown">Name</span></div>
+        <div class="col"><span class="brown">Shots per turn</span></div>
+        <div class="col"><span class="brown">Multiplier</span></div>
+        <div class="col"><span class="brown">Ammunition</span></div>
+    </div>
+    <div class="row d-flex flex-row">
+        <div class="col">Short Bow</div>
+        <div class="col">1.12</div>
+        <div class="col">2.5</div>
+        <div class="col">Arrows</div>
+    </div>
+    <div class="row d-flex flex-row">
+        <div class="col">Long Bow</div>
+        <div class="col">1.00</div>
+        <div class="col">3.00</div>
+        <div class="col">Arrows</div>
+    </div>
+    <div class="row d-flex flex-row">
+        <div class="col">Light Crossbow</div>
+        <div class="col">0.83</div>
+        <div class="col">3.50</div>
+        <div class="col">Bolts</div>
+    </div>
+    <div class="row d-flex flex-row">
+        <div class="col">Heavy Crossbow</div>
+        <div class="col">0.75</div>
+        <div class="col">4.00</div>
+        <div class="col">Bolts</div>
+    </div>
+</div>
 <p>
-    The maximum range of a shot depends on the multiplier, and thus tends to be higher for bows and crossbows than for slings. To review your average damage (and accuracy, range, shooting speed etc.) with your current shooter and ammo, type either <span style="color:#ff8000">[ C s ] </span> (<span style="color:#ff8000">[ C ]</span>haracter Sheet, <span style="color:#ff8000">[ s ]</span>hooting section) or <span style="color:#ff8000">[ ~ S ]</span> (Knowledge Menu, Shooter section); the two display the same information.
+    The maximum range of a shot depends on the multiplier, and thus tends to be higher for bows and crossbows than for slings. To review your average damage (and accuracy, range, shooting speed etc.) with your current shooter and ammo, type either <span class="orange">[ C s ]</span> (<span class="orange">[ C ]</span>haracter Sheet, <span class="orange">[ s ]</span>hooting section) or <span class="orange">[ ~ S ]</span> (Knowledge Menu, Shooter section); the two display the same information.
 </p>
 
 <a id="EgoArtifact"></a>
-<h3 style="color:#c00000">Ego Weapons and Artifacts</h3>
+<h3 class="red">Ego Weapons and Artifacts</h3>
 <p>
-    The best weapons in the game are imbued with mighty magical powers, and fall into two broad categories: (1) <span style="color:#ff0000">artifacts </span> and (2) <span style="color:#ff0000">ego items</span>. These categories are explained in more detail elsewhere (<a href="objects.html#EgoItems"><span style="color:#00ff00">[ d ]</span></a> and <a href="objects.html#SpecialItems"><span style="color:#00ff00">[ e ]</span></a> ); the main difference between them is that an artifact can only be found once in each game, while an ego item shares its type with unlimitedly many other items.
+    The best weapons in the game are imbued with mighty magical powers, and fall into two broad categories: (1) <span class="red">artifacts</span> and (2) <span class="red">ego items</span>. These categories are explained in more detail elsewhere (<a href="objects.html#EgoItems"><span class="green">[ d ]</span></a> and <a href="objects.html#SpecialItems"><span class="green">[ e ]</span></a> ); the main difference between them is that an artifact can only be found once in each game, while an ego item shares its type with unlimitedly many other items.
 </p>
 <p>
     Both artifacts and ego items can be highly valuable, and may provide exceptional damage against certain monsters, boosts to your stats or speed, elemental resistances, and other nice stuff. Typically, once you've got past the very early game, the weapon you wield will always be either an artifact or an ego item.
@@ -121,18 +113,18 @@
 </p>
 
 <a id="Slays"></a>
-<h3 style="color:#c00000">Slays and Brands</h3>
+<h3 class="red">Slays and Brands</h3>
 <p>
-    Slays and brands are weapon attributes that give you extra damage against certain monsters. A <span style="color:#ff0000">slay </span> increases your damage against a particular class of monsters (such as orcs, demons, or undead), while a <span style="color:#ff0000">brand </span> is elemental and gives extra damage against all monsters not resistant to that element. Slays and brands are functionally one and the same thing, the only difference between them is terminology.
+    Slays and brands are weapon attributes that give you extra damage against certain monsters. A <span class="red">slay </span> increases your damage against a particular class of monsters (such as orcs, demons, or undead), while a <span class="red">brand </span> is elemental and gives extra damage against all monsters not resistant to that element. Slays and brands are functionally one and the same thing, the only difference between them is terminology.
 </p>
 <p>
-    Melee weapons frequently have a slay or a brand, and may receive additional <span style="color:#ff0000">off-weapon slays </span> (or brands) from sources such as Gloves of Slaying. Melee slays work by multiplying the damage dice roll of the weapon; for example, <span style="color:#00ff00">Viper's Fang </span> (poison brand) multiplies the dice roll by 2.4 if the monster attacked does not resist poison. Accordingly, slays and brands are much more valuable on weapons with high damage dice (like a <span style="color:#00ffff"> 4d10 </span> Heavy Lance) than on a tiny but otherwise competitive <span style="color:#00ffff"> 1d5 </span> dagger. The multipliers differ from slay to slay, and range from as low as x1.9 for Slay Evil (which is still one of the best slays due to its broad applicability!) to a mighty x4.5 for some mega-slays like Kill Demon.
+    Melee weapons frequently have a slay or a brand, and may receive additional <span class="red">off-weapon slays </span> (or brands) from sources such as Gloves of Slaying. Melee slays work by multiplying the damage dice roll of the weapon; for example, <span class="green">Viper's Fang </span> (poison brand) multiplies the dice roll by 2.4 if the monster attacked does not resist poison. Accordingly, slays and brands are much more valuable on weapons with high damage dice (like a <span style="color:#00ffff"> 4d10 </span> Heavy Lance) than on a tiny but otherwise competitive <span style="color:#00ffff"> 1d5 </span> dagger. The multipliers differ from slay to slay, and range from as low as x1.9 for Slay Evil (which is still one of the best slays due to its broad applicability!) to a mighty x4.5 for some mega-slays like Kill Demon.
 </p>
 <p>
     Archery slays and brands work in a slightly different way: they multiply both the damage dice of the projectile and the damage bonus of the projectile. Archery slays use lower multipliers than melee slays, but this is more than made up for by their application to the projectile's damage bonus. Off-weapon archery slays and brands are practically unheard of, and even the bows themselves only rarely have slays; most commonly, archery slays come directly from the projectiles.
 </p>
 <p>
-    <span style="color:#ff0000">Slays (and brands) never stack</span> ; if multiple slays are available that would apply to the same monster, only the strongest slay is actually applied. There are two main exceptions to this: one is <span style="color:#ff00ff">Mark of Chaos</span>, which is essentially a random slay or brand re-rolled for each attack. If the random brand coincides with an existing brand, it can make the brand slightly stronger. The other is <span style="color:#00ffff">Force Brand</span> (or <span style="color:#00ffff">Mana Brand</span> ), a very strong brand that consumes your mana; it fully combines with other slays and brands, but only works as long as you have mana.
+    <span class="red">Slays (and brands) never stack</span> ; if multiple slays are available that would apply to the same monster, only the strongest slay is actually applied. There are two main exceptions to this: one is <span style="color:#ff00ff">Mark of Chaos</span>, which is essentially a random slay or brand re-rolled for each attack. If the random brand coincides with an existing brand, it can make the brand slightly stronger. The other is <span style="color:#00ffff">Force Brand</span> (or <span style="color:#00ffff">Mana Brand</span> ), a very strong brand that consumes your mana; it fully combines with other slays and brands, but only works as long as you have mana.
 </p>
 <p>
     A few classes, such as Samurai and Sword-speciality Weaponmasters, have access to special brands available only to them. These may be very strong (the special Samurai version of the <span style="color:#0000ff">lightning brand</span> has a higher multiplier than any normal brand or slay), and sometimes combine with normal brands: also having a regular Lightning Brand makes the Samurai brand stronger still.
@@ -142,51 +134,51 @@
 </p>
 
 <a id="Choices"></a>
-<h3 style="color:#c00000">Choosing the Right Weapon</h3>
+<h3 class="red">Choosing the Right Weapon</h3>
 <p>
-    In the early game, before you find your first decent ego weapon, you probably just want to pick the weapon you do the most damage with. (As noted above, you can type either <span style="color:#ff8000">[ C m ]</span> or <span style="color:#ff8000">[ ~ W ] </span> to check your damage output per round.) Things get more complicated once you start discovering good ego weapons or artifacts; one weapon might do more damage, but another has bonuses or resistances you'd like. You will need to compromise:
+    In the early game, before you find your first decent ego weapon, you probably just want to pick the weapon you do the most damage with. (As noted above, you can type either <span class="orange">[ C m ]</span> or <span class="orange">[ ~ W ]</span> to check your damage output per round.) Things get more complicated once you start discovering good ego weapons or artifacts; one weapon might do more damage, but another has bonuses or resistances you'd like. You will need to compromise:
     make sure you get the resistances you need, but also that you still do enough damage! (A common dilemma faced by new players is that they find the artifact sword 'Sting', but aren't sure whether to equip it since their previous weapon did slightly more damage per round. The general solution to this dilemma is that <span style="color:#ff00ff">Sting wins </span> and you ought to switch.)
 </p>
 <p>
-    In comparing weapon damage, pay attention to not just the raw damage number but also to your hit chance against monsters: high theoretical damage is no good if in practice you always miss! Note, though, that poor accuracy with a new weapon might be just due to your lack of experience with that weapon: your <span style="color:#ff0000">proficiency </span> is low, and your accuracy
-    will improve as you gain proficiency. See <a href="prof.html#Weapon"><span style="color:#00ff00">[ f ]</span></a> for more  details on how weapon proficiency works.
+    In comparing weapon damage, pay attention to not just the raw damage number but also to your hit chance against monsters: high theoretical damage is no good if in practice you always miss! Note, though, that poor accuracy with a new weapon might be just due to your lack of experience with that weapon: your <span class="red">proficiency </span> is low, and your accuracy
+    will improve as you gain proficiency. See <a href="prof.html#Weapon"><span class="green">[ f ]</span></a> for more  details on how weapon proficiency works.
 </p>
 <p>
-    Remember also your<span style="color:#ff0000">speed</span> : damage per round is a good general yardstick, but a bonus to speed means you get more rounds.
+    Remember also your<span class="red">speed</span> : damage per round is a good general yardstick, but a bonus to speed means you get more rounds.
 </p>
 
 <a id="AttackWalls"></a>
-<h3 style="color:#c00000">Attacking Monsters in Walls</h3>
+<h3 class="red">Attacking Monsters in Walls</h3>
 <p>
-    Some creatures, like ghosts, have the ability to pass through walls. You can attack monsters in adjacent walls in melee by trying to move into the wall space containing the monster; if the creature is invisible to you, this requires you to tunnel (<span style="color:#ff8000">[ + ]</span> ) into the wall.
+    Some creatures, like ghosts, have the ability to pass through walls. You can attack monsters in adjacent walls in melee by trying to move into the wall space containing the monster; if the creature is invisible to you, this requires you to tunnel (<span class="orange">[ + ]</span> ) into the wall.
 </p>
 <p>
     Bolt spells (and projectiles) do full damage to monsters in walls, but ball spells will be stopped and blow up just in front of the wall, dealing only half damage. (Conversely, if you manage to assume a ghostly form, you will also take reduced damage from ball and breath attacks while inside a wall.)
 </p>
 
 <a id="AttackPets"></a>
-<h3 style="color:#c00000">Attacking Pets or Friendly Monsters</h3>
+<h3 class="red">Attacking Pets or Friendly Monsters</h3>
 <p>
     As long as your character has a clear head, the game usually assumes that you don't really want to attack somebody who is on your side. Attempted melee will either have no effect or just results in you and the monster swapping positions, and the targeting menu skips pets.
 </p>
 <p>
-    Sometimes, though, you might actually <span style="color:ff00000">want</span> to hurt a pet or a friendly monster. (The classic case is killing Farmer Maggot for the sake of a cheap item...) To accomplish this, use the <span style="color:#ff8000">[ + ] </span> "alter adjacent grid" command to melee; in the targetting menu, <span style="color:#ff8000">[ p ]</span> allows you to choose any square or monster as your target.
+    Sometimes, though, you might actually <span style="color:ff00000">want</span> to hurt a pet or a friendly monster. (The classic case is killing Farmer Maggot for the sake of a cheap item...) To accomplish this, use the <span class="orange">[ + ] </span> "alter adjacent grid" command to melee; in the targetting menu, <span class="orange">[ p ]</span> allows you to choose any square or monster as your target.
 </p>
 <p>
     Note that attacking a friendly monster will turn it hostile.
 </p>
 
 <a id="MonkAttacks"></a>
-<h3 style="color:#c00000">Martial Arts</h3>
+<h3 class="red">Martial Arts</h3>
 <p>
     Monks, Mystics and Force-Trainers prefer to fight unarmed; they can only use a handful of weapons well, and even then are generally more effective barehanded. As these classes gain experience, they learn new and more powerful attacking techniques; high-level attacks may even stun or slow opponents. Most other classes cannot learn martial arts; the only exception is Skillmasters, who can invest skill points in unarmed combat.
 </p>
 <p>
-    Martial arts characters can view their attack list and average damage per round in the usual ways: by typing <span style="color:#ff8000">[ C m ] </span> or <span style="color:#ff8000">[ ~ W ]</span>.
+    Martial arts characters can view their attack list and average damage per round in the usual ways: by typing <span class="orange">[ C m ] </span> or <span class="orange">[ ~ W ]</span>.
 </p>
 
 <a id="BothHands"></a>
-<h3 style="color:#c00000">Two-Handed Wielding</h3>
+<h3 class="red">Two-Handed Wielding</h3>
 <p>
     Most characters wield a weapon in one hand and a shield in the other; but from a damage point of view, your best option is nearly always to do away with the shield and leave both hands for the weapon. Wielding a single weapon with both hands improves your damage and accuracy; and unless your blows per round were already maxed out anyway, you also receive more blows. (Gloves of the Giant amplify this bonus to blows.)
 </p>
@@ -198,19 +190,19 @@
 </p>
 
 <a id="DualWielding"></a>
-<h3 style="color:#c00000">Dual-Wielding</h3>
+<h3 class="red">Dual-Wielding</h3>
 <p>
-    Wielding one weapon in your right hand, and another in your left hand, is called <span style="color:#ff0000">dual-wielding</span> . Unlike two-handed wielding, which almost every character can do, dual-wielding works best on specific classes: those with a high <span style="color:#ff0000">dual-wielding proficiency cap </span> (see <a href="prof.html#Dual-Wielding"><span style="color:#00ff00">[ g ]</span></a> for more details on dual-wielding proficiency). Dual-wielding also differs radically from two-handed wielding in that two-handed wielding works best with heavy weapons, while dual-wielding works best with very light weapons.
+    Wielding one weapon in your right hand, and another in your left hand, is called <span class="red">dual-wielding</span> . Unlike two-handed wielding, which almost every character can do, dual-wielding works best on specific classes: those with a high <span class="red">dual-wielding proficiency cap </span> (see <a href="prof.html#Dual-Wielding"><span class="green">[ g ]</span></a> for more details on dual-wielding proficiency). Dual-wielding also differs radically from two-handed wielding in that two-handed wielding works best with heavy weapons, while dual-wielding works best with very light weapons.
 </p>
 <p>
-    The two classes best suited for dual-wielding are <span style="color:#ff0000">Ninjas</span> and <span style="color:#ff0000">Berserkers</span>; not only can both reach Master proficiency (the highest possible), but it also fits their skillset in other ways. The usual damage penalty from dual-wielding without special Genji gloves is waived for Berserkers, while Ninjas have a strong preference for light weapons and cannot equip a shield without incurring penalties. It is possible for dual-wielding to work well on other melee classes as well, but you should always check your proficiency cap.
+    The two classes best suited for dual-wielding are <span class="red">Ninjas</span> and <span class="red">Berserkers</span>; not only can both reach Master proficiency (the highest possible), but it also fits their skillset in other ways. The usual damage penalty from dual-wielding without special Genji gloves is waived for Berserkers, while Ninjas have a strong preference for light weapons and cannot equip a shield without incurring penalties. It is possible for dual-wielding to work well on other melee classes as well, but you should always check your proficiency cap.
 </p>
 <p>
-    There is one somewhat surprising class that might like to dual-wield despite an extremely low proficiency limit: <span style="color:#ff0000">sorcerers</span>. Being the ultimate mage class, sorcerers never really melee... so they don't need AC or melee accuracy much, and weapons often give better bonuses than a shield would.
+    There is one somewhat surprising class that might like to dual-wield despite an extremely low proficiency limit: <span class="red">sorcerers</span>. Being the ultimate mage class, sorcerers never really melee... so they don't need AC or melee accuracy much, and weapons often give better bonuses than a shield would.
 </p>
 
 <a id="MagicalAids"></a>
-<h3 style="color:#c00000">Magical Aids to Physical Combat</h3>
+<h3 class="red">Magical Aids to Physical Combat</h3>
 <p>
     There are several ways to increase your physical combat ability through magic. The most common are <span style="color:#00ffff">Potions of Heroism </span> and <span style="color:#00ffff">Potions of Berserk Strength</span> , which temporarily increase your accuracy and HP pool and provide resistance to fear. Scrolls of Blessing, Holy Chant and Holy Prayer can also be used to temporarily improve your AC and accuracy; these bonuses are cumulative with the potions.
 </p>
@@ -219,48 +211,48 @@
 </p>
 
 <a name="ImproveOdds"></a>
-<h3 style="color:#c00000">Improving Your Odds</h3>
+<h3 class="red">Improving Your Odds</h3>
 <p>
     Using magic to get better at combat is nice; but using magic to make your opponents less dangerous tends to be even more effective. In practice this means using spells or magic devices to <span style="color:#804000">confuse</span> or <span style="color:#c0c0c0">slow</span> an enemy.
 </p>
 <p>
-    <span style="color:#ff0000">Confusion</span> in particular is an incredibly powerful tool. A <span style="color:#008040">Wand of Confuse Monster</span>, a <span style="color:#c08040">Staff of Confuse Monsters</span> or even splash damage from a thrown <span style="color:#00ffff">Potion of Booze</span> can send monsters stumbling into random directions, unable to use their spells or breath attacks as they could not aim them reliably. Confused monsters can only hurt you in melee, and then only if they happen to find the right direction. Not all monsters can be confused, but many can, including quite a few uniques.
+    <span class="red">Confusion</span> in particular is an incredibly powerful tool. A <span style="color:#008040">Wand of Confuse Monster</span>, a <span style="color:#c08040">Staff of Confuse Monsters</span> or even splash damage from a thrown <span style="color:#00ffff">Potion of Booze</span> can send monsters stumbling into random directions, unable to use their spells or breath attacks as they could not aim them reliably. Confused monsters can only hurt you in melee, and then only if they happen to find the right direction. Not all monsters can be confused, but many can, including quite a few uniques.
 </p>
 <p>
-    <span style="color:#ff0000">Slowness</span> is a bit less dramatic, but still very valuable. In the early game, <span style="color:#ffff00">-10 to speed</span> tends to mean a monster's speed is reduced by half or more, which needless to say is an enormous advantage; for faster monsters the effects will be less dramatic, but you will still get a turn in more often and be at much less danger of a deadly double-move. All uniques are immune to slowness, but most non-uniques can be slowed.
+    <span class="red">Slowness</span> is a bit less dramatic, but still very valuable. In the early game, <span style="color:#ffff00">-10 to speed</span> tends to mean a monster's speed is reduced by half or more, which needless to say is an enormous advantage; for faster monsters the effects will be less dramatic, but you will still get a turn in more often and be at much less danger of a deadly double-move. All uniques are immune to slowness, but most non-uniques can be slowed.
 </p>
 
 <a name="OffensiveDevices"></a>
-<h3 style="color:#c00000">Attacking with Magic Devices</h3>
+<h3 class="red">Attacking with Magic Devices</h3>
 <p>
-    Many magical devices can be used to attack monsters directly. Nearly all characters (other than Berserkers) use offensive <span style="color:#ff0000">wands</span> and <span style="color:#ff0000">rods</span> to at least some extent, usually in a supporting role, but sometimes as their main source of offense.
+    Many magical devices can be used to attack monsters directly. Nearly all characters (other than Berserkers) use offensive <span class="red">wands</span> and <span class="red">rods</span> to at least some extent, usually in a supporting role, but sometimes as their main source of offense.
 </p>
 <p>
-    Each device produces a specific effect when used. For offensive devices, these tend to be either <span style="color:#ff0000">bolts</span>, which hurt a single monster; <span style="color:#ff0000">balls</span>, which hurt all monsters within a given radius of the ball's epicenter; <span style="color:#ff0000">beams</span>, which hurt all monsters within the beam's path; or <span style="color:#ff0000">breaths</span>, conical effects that explode into a ball. These bolts, beams, balls or breaths are <span style="color:#ff0000">elemental</span>, meaning their damage relies on a specific damage type (such as acid, electricity, fire, cold or nexus) and monsters resistant to that element will not suffer full damage.
+    Each device produces a specific effect when used. For offensive devices, these tend to be either <span class="red">bolts</span>, which hurt a single monster; <span class="red">balls</span>, which hurt all monsters within a given radius of the ball's epicenter; <span class="red">beams</span>, which hurt all monsters within the beam's path; or <span class="red">breaths</span>, conical effects that explode into a ball. These bolts, beams, balls or breaths are <span class="red">elemental</span>, meaning their damage relies on a specific damage type (such as acid, electricity, fire, cold or nexus) and monsters resistant to that element will not suffer full damage.
 </p>
 <p>
     Bolt devices are generally the least exciting, but they are also the most common in the early game and so likely to be your first offensive devices. An early <span style="color:#008040">Wand of Frost Bolts</span> can really help a character with otherwise limited offense, and some characters accordingly buy one from the Magic Shop as soon as they can afford it.
 </p>
 <p>
-    With some very rare exceptions, offensive magic devices are always aimed at a target or direction, and are accordingly best used from range. See <a href="objects.html#Devices"><span style="color:#00ff00">[ h ]</span></a>  for more information about magic devices, and <a href="attack.html#DistanceAttack"><span style="color:#00ff00">[ i ]</span></a> above for more on attacking from a distance.
+    With some very rare exceptions, offensive magic devices are always aimed at a target or direction, and are accordingly best used from range. See <a href="objects.html#Devices"><span class="green">[ h ]</span></a>  for more information about magic devices, and <a href="attack.html#DistanceAttack"><span class="green">[ i ]</span></a> above for more on attacking from a distance.
 </p>
 
 <a id="OffensiveSpells"></a>
-<h3 style="color:#c00000">Attacking with Spells</h3>
+<h3 class="red">Attacking with Spells</h3>
 <p>
-    Spells and spell-like special powers are an important source of offense for many characters. Sorcerers, Mages and other mage-like classes often rely on them as their main offense, although this depends on build and (for book classes) the realms selected; some realms (like <span style="color:#ff0000">Armageddon</span> ) are full of attacking spells, while others (like <span style="color:#ff0000">Sorcery</span> ) offer great options for tactics and utility but nothing that would hurt a monster
+    Spells and spell-like special powers are an important source of offense for many characters. Sorcerers, Mages and other mage-like classes often rely on them as their main offense, although this depends on build and (for book classes) the realms selected; some realms (like <span class="red">Armageddon</span> ) are full of attacking spells, while others (like <span class="red">Sorcery</span> ) offer great options for tactics and utility but nothing that would hurt a monster
     directly. While a Mage does not necessarily need offensive spells - they can use high-level wands and rods more effectively than most classes, and even their melee and archery can get the job done in a pinch - spell attacks are the most stereotypical and often also the strongest.
 </p>
 <p>
-    The downside of relying on spells for offense is that they can deplete a caster's mana very rapidly. Accordingly, characters built for magical combat tend to invest disproportionately in their spellcasting stat, and greatly value items that increase their mana pool or reduce the mana cost of spells. Early attacking spells like <span style="color:#ff0000">Magic Missile </span> sometimes stay relevant for a very long time, simply because they are so cheap; while the damage is relatively low, so is the mana cost.
+    The downside of relying on spells for offense is that they can deplete a caster's mana very rapidly. Accordingly, characters built for magical combat tend to invest disproportionately in their spellcasting stat, and greatly value items that increase their mana pool or reduce the mana cost of spells. Early attacking spells like <span class="red">Magic Missile </span> sometimes stay relevant for a very long time, simply because they are so cheap; while the damage is relatively low, so is the mana cost.
 </p>
 <p>
     Offensive spells resemble offensive devices; most of them are also bolts, beams, balls or breaths of some element.
-    See <a href="magic.html"><span style="color:#00ff00">[ j ]</span></a> for more on magic and spellcasting.
+    See <a href="magic.html"><span class="green">[ j ]</span></a> for more on magic and spellcasting.
 </p>
 
 <a id="MeleeTactics"></a>
-<h3 style="color:#c00000">Basic Tactics</h3>
+<h3 class="red">Basic Tactics</h3>
 
 <h3 style="color:#c08040">Pillardancing</h3>
 <p>
