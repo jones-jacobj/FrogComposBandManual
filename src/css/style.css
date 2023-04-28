@@ -9,7 +9,7 @@ html{
     font-family: 'Ubuntu', sans-serif;
     color: white;
     background-color: black;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 body {
@@ -31,32 +31,3 @@ ul{
     padding-bottom: 20px;
     width: 1200px;
 }
-
-/*p {*/
-/*    line-height: 145%;*/
-/*}*/
-
-.red{
-    color:#ff0000;
-}
-
-.green{
-    color:#00ff00;
-}
-
-.brown{
-    color:#C08040;
-}
-
-.orange{
-    color:#ff8000;
-}
-
-.blue{
-    color:#00ffff;
-}
-
-.purple{
-    color:#ff00ff;
-}
-
