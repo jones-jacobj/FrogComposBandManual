@@ -6,10 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 html{
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    background-color: black;
-    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif; !important;
+    color: white; !important;
+    background-color: black; !important;
+    font-size: 18px; !important;
 }
 
 body {
